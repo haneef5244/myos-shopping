@@ -5,7 +5,7 @@ import { Order } from "../entitities/Order.entity";
 import { Product } from "../entitities/Product.entity";
 import { ProductOrder } from "../entitities/ProductOrder.entity";
 
-@Resolver(Order)
+@Resolver()
 export class OrderResolver {
     @Mutation(() => [ProductOrder])
     createOrder(
@@ -44,8 +44,6 @@ export class OrderResolver {
                 resolve(res);
             }).catch(err => reject(err))
         })
-
-
     }
 
 

@@ -1,10 +1,10 @@
 import { Field, ID, ObjectType } from "type-graphql";
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, BaseEntity } from "typeorm"
 import { ProductOrder } from "./ProductOrder.entity";
 
 @Entity()
 @ObjectType()
-export class Order {
+export class Order extends BaseEntity {
     @Field(() => ID)
     @PrimaryGeneratedColumn("uuid")
     id: string
