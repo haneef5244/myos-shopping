@@ -1,9 +1,9 @@
-import { ProductCreateOrder } from "../model/ProductCreateOrder.model";
+import { ProductCreateOrder } from "../models/ProductCreateOrder.model";
 import { Arg, Mutation, Resolver } from "type-graphql";
 import { AppDataSource } from "../data-source";
-import { Order } from "../entity/Order.entity";
-import { Product } from "../entity/Product.entity";
-import { ProductOrder } from "../entity/ProductOrder.entity";
+import { Order } from "../entitities/Order.entity";
+import { Product } from "../entitities/Product.entity";
+import { ProductOrder } from "../entitities/ProductOrder.entity";
 
 @Resolver(Order)
 export class OrderResolver {

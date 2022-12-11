@@ -1,7 +1,7 @@
 import { Arg, Query, Resolver } from "type-graphql";
 import { Like } from "typeorm";
-import { Product } from "../entity/Product.entity";
-import { OrderBy } from "../model/OrderBy.model";
+import { Product } from "../entitities/Product.entity";
+import { OrderBy } from "../models/OrderBy.model";
 
 @Resolver()
 export class ProductResolver {
