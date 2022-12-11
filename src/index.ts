@@ -4,8 +4,8 @@ import * as dotenv from 'dotenv';
 import { initializeDataSource } from "./data-source"
 import { buildSchema } from 'type-graphql';
 import { ApolloServer } from 'apollo-server-express';
-import { ProductResolver } from './resolver/Product.resolver';
-import { OrderResolver } from './resolver/Order.resolver';
+import { ProductResolver } from './resolvers/Product.resolver';
+import { OrderResolver } from './resolvers/Order.resolver';
 
 
 dotenv.config();
